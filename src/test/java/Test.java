@@ -12,12 +12,14 @@ public class Test {
 
     public static void main(String[] args) throws Exception {
 
+        //Before
         setUp();
 
         //Tests
         loginThreeFailed();
         validationAccountBlock();
 
+        //After
         tearDown();
     }
 
@@ -25,10 +27,10 @@ public class Test {
     public static void setUp() throws Exception {
         DesiredCapabilities cap = new DesiredCapabilities();
 
-        cap.setCapability("deviceName", "POCO X4 Pro 5G");
-        cap.setCapability("udid", "e3c0c1fbd0ab");
+        cap.setCapability("deviceName", "********");
+        cap.setCapability("udid", "********");
         cap.setCapability("platformName", "Android");
-        cap.setCapability("platformVersion", "11");
+        cap.setCapability("platformVersion", "##");
 
         cap.setCapability("appPackage", "com.coink.app");
         cap.setCapability("appActivity", "com.coink.app.MainActivity");
